@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background: #f4f4f4;
+}
+
+.game {
+  width: 600px;
+  height: 200px;
+  background: #fff;
+  border: 2px solid #333;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#dino {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+}
+
+#cactus {
+  width: 20px;
+  height: 40px;
+  background: green;
+  position: absolute;
+  bottom: 0;
+  left: 580px;
+}
+
+#cloud {
+  width: 80px;
+  height: 40px;
+  background: url('https://i.ibb.co/K0rLKZp/cloud.png') no-repeat center/contain;
+  position: absolute;
+  top: 30px;
+  left: 600px;
+  animation: cloudMove 20s linear infinite;
+}
+
+#jump-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 20px;
+  background: gold;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+
+@keyframes cloudMove {
+  from { left: 600px; }
+  to { left: -100px; }
+}
